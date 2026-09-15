@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+
+    int opcao;
+
+    // Mostra o cardapio
+    printf("===== CARDAPIO =====\n");
+    printf("1 - Hamburguer Artesanal - R$ 25,00\n");
+    printf("2 - Pizza Calabresa - R$ 45,00\n");
+    printf("3 - Prato Executivo - R$ 35,00\n");
+    printf("4 - Refrigerante - R$ 8,00\n");
+    printf("5 - Sobremesa - R$ 12,00\n");
+    printf("6 - Encerrar Pedido\n");
+
+    // Solicita o produto
+    printf("\nDigite o codigo do produto: ");
+    scanf("%d", &opcao);
+
+    // Verifica o produto escolhido
+    switch(opcao) {
+
+        case 1:
+            printf("\nProduto: Hamburguer Artesanal\n");
+            printf("Valor: R$ 25,00\n");
+            printf("Pedido confirmado!\n");
+            break;
+
+        case 2:
+            printf("\nProduto: Pizza Calabresa\n");
+            printf("Valor: R$ 45,00\n");
+            printf("Pedido confirmado!\n");
+            break;
+
+        case 3:
+            printf("\nProduto: Prato Executivo\n");
+            printf("Valor: R$ 35,00\n");
+            printf("Pedido confirmado!\n");
+            break;
+
+        case 4:
+            printf("\nProduto: Refrigerante\n");
+            printf("Valor: R$ 8,00\n");
+            printf("Pedido confirmado!\n");
+            break;
+
+        case 5:
+            printf("\nProduto: Sobremesa\n");
+            printf("Valor: R$ 12,00\n");
+            printf("Pedido confirmado!\n");
+            break;
+
+        case 6:
+            printf("\nPedido encerrado. Obrigado pela preferencia!\n");
+            break;
+
+        default:
+            printf("\nOpcao invalida. Produto nao encontrado no cardapio.\n");
+    }
+
+    return 0;
+}
